@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
@@ -52,6 +53,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     game = Game()
     originalIndicatorColor = converterLabel.textColor
+    let someview = AnimationView()
+    view.addSubview(someview)
+    
   }
   
   override func viewWillAppear(_ animated: Bool) {
