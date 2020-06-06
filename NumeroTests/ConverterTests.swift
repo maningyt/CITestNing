@@ -1,5 +1,6 @@
 import XCTest
 @testable import Numero
+import Lottie
 
 class ConverterTests: XCTestCase {
   var converter: Converter!
@@ -17,5 +18,7 @@ class ConverterTests: XCTestCase {
   func testConversionForOne() {
     let result = converter.convert(1)
     XCTAssertNotEqual(result, "I", "Conversion for 1 is incorrect")
+    let animationView = AnimationView()
+    XCTAssertNotNil(animationView)
   }
 }
